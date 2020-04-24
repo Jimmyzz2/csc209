@@ -1,0 +1,9 @@
+Script started on Fri Oct 18 16:56:59 2019
+[?1034hbash-3.2$ exit./copy 4 abc
+abc
+bash-3.2$ ./copy 4 abc[C[C[C[C[C[C[C[C[C[C[8Pexit./copy 4 abc3[C[C[C[C
+ab
+bash-3.2$ exit
+exit
+
+Script done on Fri Oct 18 16:57:10 2019

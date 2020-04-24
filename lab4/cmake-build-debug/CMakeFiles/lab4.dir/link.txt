@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/lab4.dir/compare.c.o CMakeFiles/lab4.dir/greeting.c.o CMakeFiles/lab4.dir/strip.c.o CMakeFiles/lab4.dir/truncate.c.o  -o lab4 

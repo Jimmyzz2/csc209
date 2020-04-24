@@ -1,0 +1,3 @@
+/Volumes/BOOTCAMP/csc209/zhanzhih/a4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Volumes/BOOTCAMP/csc209/zhanzhih/a4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Volumes/BOOTCAMP/csc209/zhanzhih/a4/cmake-build-debug/CMakeFiles/a4.dir

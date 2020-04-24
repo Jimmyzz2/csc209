@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="a3test"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="a3test">
+				<Option output="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/a3test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/."/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 a3test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="a3test/fast">
+				<Option output="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/a3test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/."/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 a3test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/Makefile">
+			<Option target="a3test"/>
+		</Unit>
+		<Unit filename="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/mytest.c">
+			<Option target="a3test"/>
+		</Unit>
+		<Unit filename="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/parse.c">
+			<Option target="a3test"/>
+		</Unit>
+		<Unit filename="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/parse2.c">
+			<Option target="a3test"/>
+		</Unit>
+		<Unit filename="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/pmake.c">
+			<Option target="a3test"/>
+		</Unit>
+		<Unit filename="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/pmake.h">
+			<Option target="a3test"/>
+		</Unit>
+		<Unit filename="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/run_make.c">
+			<Option target="a3test"/>
+		</Unit>
+		<Unit filename="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/simpletest.c">
+			<Option target="a3test"/>
+		</Unit>
+		<Unit filename="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/smalloc.c">
+			<Option target="a3test"/>
+		</Unit>
+		<Unit filename="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/smalloc.h">
+			<Option target="a3test"/>
+		</Unit>
+		<Unit filename="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/testhelpers.c">
+			<Option target="a3test"/>
+		</Unit>
+		<Unit filename="/Volumes/BOOTCAMP/csc209/zhanzhih/a3test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

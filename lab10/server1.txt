@@ -1,0 +1,277 @@
+Script started on Fri Nov 22 20:08:08 2019
+[?1034hbash-3.2$ gdb bufserver
+[?1034h[35;1mGNU gdb (GDB) 8.3
+[mCopyright (C) 2019 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-apple-darwin17.7.0".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32mbufserver[m...
+(gdb) break set_up_server_socket
+Breakpoint 1 at [34m0x100000a9b[m: file [32msocket.c[m, line 36.
+(gdb) n
+The program is not being run.
+(gdb) n[Krun
+Starting program: /Volumes/BOOTCAMP/csc209/zhanzhih/lab10/bufserver 
+[New Thread 0x1803 of process 75894]
+[New Thread 0x1903 of process 75894]
+warning: `/BuildRoot/Library/Caches/com.apple.xbs/Binaries/Libc_darwin/install/TempContent/Objects/Libc.build/libsystem_darwin.dylib.build/Objects-normal/x86_64/darwin_vers.o': can't open to read symbols: No such file or directory.
+warning: `/BuildRoot/Library/Caches/com.apple.xbs/Binaries/Libc_darwin/install/TempContent/Objects/Libc.build/libsystem_darwin.dylib.build/Objects-normal/x86_64/dirstat.o': can't open to read symbols: No such file or directory.
+warning: `/BuildRoot/Library/Caches/com.apple.xbs/Binaries/Libc_darwin/install/TempContent/Objects/Libc.build/libsystem_darwin.dylib.build/Objects-normal/x86_64/dirstat_collection.o': can't open to read symbols: No such file or directory.
+warning: `/BuildRoot/Library/Caches/com.apple.xbs/Binaries/Libc_darwin/install/TempContent/Objects/Libc.build/libsystem_darwin.dylib.build/Objects-normal/x86_64/init.o': can't open to read symbols: No such file or directory.
+warning: `/BuildRoot/Library/Caches/com.apple.xbs/Binaries/Libc_darwin/install/TempContent/Objects/Libc.build/libsystem_darwin.dylib.build/Objects-normal/x86_64/variant.o': can't open to read symbols: No such file or directory.
+
+Thread 2 hit Breakpoint 1, [33mset_up_server_socket[m ([36mself[m=0x100200170, [36mnum_queue[m=5)[m
+   [m at [32msocket.c[m:36
+36	    int soc = socket(PF_INET, SOCK_STREAM, 0);
+(gdb) n\[K
+37	    if (soc < 0) {
+(gdb) n
+44	    int on = 1;
+(gdb) n
+45	    int status = setsockopt(soc, SOL_SOCKET, SO_REUSEADDR,
+(gdb) n
+47	    if (status < 0) {
+(gdb) n
+53	    if (bind(soc, (struct sockaddr *)self, sizeof(*self)) < 0) {
+(gdb) n
+55	        perror("bind");
+(gdb) n
+bind: Address already in use
+56	        exit(1);
+(gdb) n
+[Inferior 1 (process 75894) exited with code 01]
+(gdb) q
+bash-3.2$ gdb bufserver[K[K[K[K[K[K[K[K[K[K[K[K[Kmake
+make: Nothing to be done for `all'.
+bash-3.2$ make clean
+rm *.o readserver randclient bufserver
+bash-3.2$ mn[Kake 
+gcc -DPORT=54867 -g -Wall -std=gnu99 -c readserver.c
+gcc -DPORT=54867 -g -Wall -std=gnu99 -c socket.c
+gcc -DPORT=54867 -g -Wall -std=gnu99 -o readserver readserver.o socket.o
+gcc -DPORT=54867 -g -Wall -std=gnu99 -c randclient.c
+gcc -DPORT=54867 -g -Wall -std=gnu99 -o randclient randclient.o socket.o
+gcc -DPORT=54867 -g -Wall -std=gnu99 -c bufserver.c
+gcc -DPORT=54867 -g -Wall -std=gnu99 -o bufserver bufserver.o socket.o
+bash-3.2$ make clean[Kgdb bufserver
+[?1034h[35;1mGNU gdb (GDB) 8.3
+[mCopyright (C) 2019 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-apple-darwin17.7.0".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32mbufserver[m...
+(gdb) n
+The program is not being run.
+(gdb) n[Krun[K[K[Kr[Kbreak [K[K[K[K[K[Kbreak set_up_server_socket
+Breakpoint 1 at [34m0x100000a9b[m: file [32msocket.c[m, line 36.
+(gdb) n
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) nrun
+Undefined command: "nrun".  Try "help".
+(gdb) run
+Starting program: /Volumes/BOOTCAMP/csc209/zhanzhih/lab10/bufserver 
+[New Thread 0x1803 of process 75971]
+[New Thread 0x1a03 of process 75971]
+warning: `/BuildRoot/Library/Caches/com.apple.xbs/Binaries/Libc_darwin/install/TempContent/Objects/Libc.build/libsystem_darwin.dylib.build/Objects-normal/x86_64/darwin_vers.o': can't open to read symbols: No such file or directory.
+warning: `/BuildRoot/Library/Caches/com.apple.xbs/Binaries/Libc_darwin/install/TempContent/Objects/Libc.build/libsystem_darwin.dylib.build/Objects-normal/x86_64/dirstat.o': can't open to read symbols: No such file or directory.
+warning: `/BuildRoot/Library/Caches/com.apple.xbs/Binaries/Libc_darwin/install/TempContent/Objects/Libc.build/libsystem_darwin.dylib.build/Objects-normal/x86_64/dirstat_collection.o': can't open to read symbols: No such file or directory.
+warning: `/BuildRoot/Library/Caches/com.apple.xbs/Binaries/Libc_darwin/install/TempContent/Objects/Libc.build/libsystem_darwin.dylib.build/Objects-normal/x86_64/init.o': can't open to read symbols: No such file or directory.
+warning: `/BuildRoot/Library/Caches/com.apple.xbs/Binaries/Libc_darwin/install/TempContent/Objects/Libc.build/libsystem_darwin.dylib.build/Objects-normal/x86_64/variant.o': can't open to read symbols: No such file or directory.
+
+Thread 2 hit Breakpoint 1, [33mset_up_server_socket[m ([36mself[m=0x100300060, [36mnum_queue[m=5)[m
+   [m at [32msocket.c[m:36
+36	    int soc = socket(PF_INET, SOCK_STREAM, 0);
+(gdb) n
+37	    if (soc < 0) {
+(gdb) n
+44	    int on = 1;
+(gdb) n
+45	    int status = setsockopt(soc, SOL_SOCKET, SO_REUSEADDR,
+(gdb) n
+47	    if (status < 0) {
+(gdb) n
+53	    if (bind(soc, (struct sockaddr *)self, sizeof(*self)) < 0) {
+(gdb) n
+60	    if (listen(soc, num_queue) < 0) {
+(gdb) n
+66	    return soc;
+(gdb) n
+[33mmain[m () at [32mbufserver.c[m:27
+27	        int fd = accept_connection(listenfd);
+(gdb) n
+Waiting for a new connection...
+New connection accepted from 127.0.0.1:63940
+28	        if (fd < 0) {
+(gdb) n\n[K[K\[K
+33	        char buf[BUFSIZE] = {'\0'};
+(gdb) n
+34	        int inbuf = 0;           // How many bytes currently in buffer?
+(gdb) 
+35	        int room = sizeof(buf);  // How many bytes remaining in buffer?
+(gdb) 
+36	        char *after = buf;       // Pointer to position after the data in buf
+(gdb) 
+39	        while ((nbytes = read(fd, after, room)) > 0) {
+(gdb) 
+41	            inbuf += nbytes;
+(gdb) 
+52	            while ((where = find_network_newline(buf, inbuf)) > 0) {
+(gdb) 
+58	                buf[where-2] = '\0';
+(gdb) 
+59	                printf("Next message: %s\n", buf);
+(gdb) 
+Next message: A stitch in time
+65	                inbuf = inbuf - where;
+(gdb) 
+66	                memset(buf, '\0', where - 1);
+(gdb) 
+71	                memmove(buf, buf + where, inbuf);
+(gdb) 
+52	            while ((where = find_network_newline(buf, inbuf)) > 0) {
+(gdb) 
+52	            while ((where = find_network_newline(buf, inbuf)) > 0) {
+(gdb) 
+75	            after = &(buf[inbuf]);
+(gdb) 
+76	            room = BUFSIZE - inbuf;
+(gdb) 
+39	        while ((nbytes = read(fd, after, room)) > 0) {
+(gdb) 
+41	            inbuf += nbytes;
+(gdb) 
+52	            while ((where = find_network_newline(buf, inbuf)) > 0) {
+(gdb) 
+58	                buf[where-2] = '\0';
+(gdb) 
+59	                printf("Next message: %s\n", buf);
+(gdb) 
+Next message: A stitch in time
+65	                inbuf = inbuf - where;
+(gdb) 
+66	                memset(buf, '\0', where - 1);
+(gdb) 
+71	                memmove(buf, buf + where, inbuf);
+(gdb) 
+52	            while ((where = find_network_newline(buf, inbuf)) > 0) {
+(gdb) 
+52	            while ((where = find_network_newline(buf, inbuf)) > 0) {
+(gdb) 
+75	            after = &(buf[inbuf]);
+(gdb) 
+76	            room = BUFSIZE - inbuf;
+(gdb) 
+39	        while ((nbytes = read(fd, after, room)) > 0) {
+(gdb) 
+41	            inbuf += nbytes;
+(gdb) 
+52	            while ((where = find_network_newline(buf, inbuf)) > 0) {
+(gdb) 
+58	                buf[where-2] = '\0';
+(gdb) 
+59	                printf("Next message: %s\n", buf);
+(gdb) 
+Next message: A stitch in time
+65	                inbuf = inbuf - where;
+(gdb) 
+66	                memset(buf, '\0', where - 1);
+(gdb) 
+71	                memmove(buf, buf + where, inbuf);
+(gdb) 
+52	            while ((where = find_network_newline(buf, inbuf)) > 0) {
+(gdb) 
+52	            while ((where = find_network_newline(buf, inbuf)) > 0) {
+(gdb) 
+75	            after = &(buf[inbuf]);
+(gdb) 
+76	            room = BUFSIZE - inbuf;
+(gdb) 
+39	        while ((nbytes = read(fd, after, room)) > 0) {
+(gdb) 
+41	            inbuf += nbytes;
+(gdb) 
+52	            while ((where = find_network_newline(buf, inbuf)) > 0) {
+(gdb) 
+58	                buf[where-2] = '\0';
+(gdb) 
+59	                printf("Next message: %s\n", buf);
+(gdb) 
+Next message: A stitch in time
+65	                inbuf = inbuf - where;
+(gdb) 
+66	                memset(buf, '\0', where - 1);
+(gdb) 
+71	                memmove(buf, buf + where, inbuf);
+(gdb) 
+52	            while ((where = find_network_newline(buf, inbuf)) > 0) {
+(gdb) 
+52	            while ((where = find_network_newline(buf, inbuf)) > 0) {
+(gdb) 
+75	            after = &(buf[inbuf]);
+(gdb) 
+76	            room = BUFSIZE - inbuf;
+(gdb) 
+39	        while ((nbytes = read(fd, after, room)) > 0) {
+(gdb) 
+41	            inbuf += nbytes;
+(gdb) 
+52	            while ((where = find_network_newline(buf, inbuf)) > 0) {
+(gdb) 
+58	                buf[where-2] = '\0';
+(gdb) 
+59	                printf("Next message: %s\n", buf);
+(gdb) 
+Next message: A stitch in time
+65	                inbuf = inbuf - where;
+(gdb) 
+66	                memset(buf, '\0', where - 1);
+(gdb) 
+71	                memmove(buf, buf + where, inbuf);
+(gdb) 
+52	            while ((where = find_network_newline(buf, inbuf)) > 0) {
+(gdb) 
+52	            while ((where = find_network_newline(buf, inbuf)) > 0) {
+(gdb) 
+75	            after = &(buf[inbuf]);
+(gdb) 
+76	            room = BUFSIZE - inbuf;
+(gdb) 
+39	        while ((nbytes = read(fd, after, room)) > 0) {
+(gdb) 
+78	        close(fd);
+(gdb) exit
+Undefined command: "exit".  Try "help".
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 75971] will be killed.
+
+Quit anyway? (y or n) y
+bash-3.2$ exig[Kt
+exit
+
+Script done on Fri Nov 22 20:16:40 2019

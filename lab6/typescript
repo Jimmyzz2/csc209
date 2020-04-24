@@ -1,0 +1,9 @@
+Script started on Fri Oct 18 16:54:00 2019
+[?1034hbash-3.2$ ./come[K[K[Kc[Kopy 3, 2[K[K[K abc
+ab
+bash-3.2$ ./copy 4 abc
+abc
+bash-3.2$ exit
+exit
+
+Script done on Fri Oct 18 16:54:46 2019

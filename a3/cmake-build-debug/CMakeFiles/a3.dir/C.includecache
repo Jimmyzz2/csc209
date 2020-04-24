@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Volumes/BOOTCAMP/csc209/zhanzhih/a3/parse.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+sys/types.h
+-
+sys/wait.h
+-
+sys/stat.h
+-
+ctype.h
+-
+pmake.h
+/Volumes/BOOTCAMP/csc209/zhanzhih/a3/pmake.h
+
+/Volumes/BOOTCAMP/csc209/zhanzhih/a3/pmake.h
+
